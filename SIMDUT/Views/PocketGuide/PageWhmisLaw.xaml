@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageWhmisLaw">
+    <local:TemplatePocketGuide PageTitle="Le SIMDUT est la loi!">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout>
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Les entreprises canadiennes qui ont des produits dangereux sur leur lieu de travail doivent se conformer à la réglementation du SIMDUT." />
+                            <Span Text="{x:Static x:Environment.NewLine}" />
+                            <Span Text="{x:Static x:Environment.NewLine}" />
+
+                            <Span Text="Pénalités et amendes pour la non-conformité" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="Les amendes et les pénalités varient d'une province à l'autre et peuvent inclure une amende allant jusqu'à 50 000 $ et/ou jusqu'à 12 mois d'emprisonnement."/>
+                <Label Text="{x:Static x:Environment.NewLine}"/>
+                <Label Text="{x:Static x:Environment.NewLine}"/>
+                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicLadyLaw}}"  />
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

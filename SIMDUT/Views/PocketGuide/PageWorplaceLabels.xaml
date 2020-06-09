@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageWorplaceLabels">
+    <local:TemplatePocketGuide PageTitle="Étiquettes du lieu de travail">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="Si un produit contrôlé est toujours utilisé dans son contenant d'origine avec l'étiquette du fournisseur, il n'est pas nécessaire de fournir une étiquette supplémentaire."/>
+
+                <Label Text="Toutefois, dans certains cas, il se peut que l'on doit mettre le produit dans un contenant différent. Une étiquette du lieu de travail est alors nécessaire."/>
+                <Label Text="Aussi, une étiquette du lieu de travail doit également être employée si l'étiquette d'origine du fournisseur est endommagée ou devient illisible."/>
+
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBarle}}" Margin="0, 15, 0, 15"/>
+
+                <Label Text="L'étiquette du lieu de travail est utile sur les lieux mêmes du travail. Elle contient moins de renseignements que l'étiquette du fournisseur."/>
+                <Label Text="Une étiquette du lieu de travail peut être rédigée en anglais ou en français, ou dans la langue la plus utilisée sur le lieu de travail."/>
+                <Label Text="L'étiquette peut être de n'importe quelle couleur pourvu qu'elle soit très visible."/>
+                <Label Text="Une étiquette du lieu de travail contient trois (3) informations:" />
+
+                <StackLayout Margin="15, 15, 15, 15">
+                    <Label Text="1. Le nom du produit"/>
+                    <Label Text="2. Les renseignements sur la manipulation de façon sécuritaire"/>
+                    <Label Text="3. Le renvoi à la FDS"/>
+                </StackLayout>
+
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgSimdutWorplaceLable}}"/>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

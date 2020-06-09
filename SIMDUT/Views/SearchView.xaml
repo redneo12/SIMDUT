@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT;assembly=SIMDUT"
+             x:Class="SIMDUT.Views.SearchView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnHomeClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF2DC;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        <ToolbarItem  Clicked="OnCancelClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF739;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content Spacing="0">
+        <StackLayout Spacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <SearchBar x:Name="SearchBar" TextChanged="SearchBar_TextChanged"/>
+            <StackLayout Spacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView x:Name="searchList" HasUnevenRows="True"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10,0,10,0">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell >
+                                <StackLayout>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnSelectedSearchClicked"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="{Binding MatchedString}" FontAttributes="Bold" FontSize="Large"></Label>
+                                    <Label Text="{Binding MatchedCourse}"></Label>
+                                    <Label Text="{Binding MatchedPage}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

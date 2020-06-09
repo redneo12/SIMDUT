@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageWhmisAcronym">
+    <local:TemplatePocketGuide PageTitle="SIMDUT - Acronymes">
+        <local:TemplatePocketGuide.Body>
+            <Label LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Que signifie SIMDUT?" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="S" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="ystème" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="d'" FontSize="Large"/>
+                        <Span Text="I" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="nformation" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="sur les " FontSize="Large"/>
+                        <Span Text="M" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="atières" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="D" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="angereuses" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="U" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="tilisées" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+
+                        <Span Text="au " FontSize="Large"/>
+                        <Span Text="T" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="ravail" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+
+                        <Span Text="Que signifie SGH?" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="S" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="ystème" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="G" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="énéral" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="H" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="armonisé" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

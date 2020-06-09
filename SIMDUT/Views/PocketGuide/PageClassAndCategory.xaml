@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageClassAndCategory">
+    <local:TemplatePocketGuide PageTitle="Classe et catégorie">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="«Classe» est le terme utilisé par le SIMDUT 2015 pour décrire différents types de dangers, ce qui leur permet en outre d'être regroupés avec des produits dangereux similaires."/>
+                <Label Text="«Catégorie» est utilisé pour décrire les sous-sections des différentes classes. Pour déterminer à quelle catégorie appartiendrait un élément de la même classe, il existe des règles et des critères basés sur le niveau de dangerosité du produit dangereux."/>
+                <Label Text="Chaque classe de danger a au moins une catégorie."/>
+                <Label Text="Une catégorie définit la gravité ou la nature du produit dangereux. Les catégories de danger ont été attribuées aux nombres 1, 2, 3 ou plus en fonction du nombre de catégories dans une classe."/>
+                <Label Text="S'agissant des classes de danger, elles peuvent avoir des sous-catégories. Une lettre est utilisée pour désigner ces sous-catégories, telles que 1A, 1B, 1C et plus."/>
+                <Label Text="La catégorie 1 présente le niveau de risque le plus élevé (risque élevé)."/>
+                <Label Text="La catégorie 2 est moins dangereuse que la catégorie 1."/>
+                <Label Text="La catégorie 3 (risque faible) est moins dangereuse que la catégorie 2, et ainsi de suite."/>
+
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

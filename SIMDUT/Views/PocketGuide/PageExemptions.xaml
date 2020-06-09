@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageExemptions">
+    <local:TemplatePocketGuide PageTitle="Matières soustraites du SIMDUT">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="Certains produits, tels que le tabac et le bois, sont soustraits du SIMDUT."/>
+                <Label Text="D'autres produits qui ne représentent pas de danger lors d'une utilisation normale sont également exclus du système."/>
+                <Label Text="De nombreux plastiques, tel que ce contenant de boisson, peuvent générer une fumée mortelle lorsqu'ils brûlent. Toutefois, comme il est peu probable qu'un contenant de boisson brûle lors d'un utilisation normale, on le soustrait du SIMDUT."/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExemptions}}" Margin="15"/>
+
+                <Label Text="De plus, le SIMDUT ne s'applique pas aux produits chimiques ou contrôlés qui sont transportés en vertu des règlements TMD, ou les règlements sur le transport des marchandises dangereuses. Le SIMDUT s'applique seulement lorsque les produits chimiques ont été livrés sur le lieu de travail."/>
+                <Label Text="Certains produits chimiques, tels que les explosifs et les matériaux radioactifs, se trouvent en partie soustraits du SIMDUT, puisqu'ils sont déjà réglementés autrement."/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExemptions2}}" Margin="15"/>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

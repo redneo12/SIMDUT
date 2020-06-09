@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:SIMDUT"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.PageLabels">
+    <local:TemplatePocketGuide PageTitle="Étiquettes">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="La plupart des produits dangereux sur le lieu de travail ont besoin d'une étiquette SIMDUT."/>
+
+                <Label Text="Il y a deux (2) types d'étiquettes SIMDUT:"/>
+                <Label Text="• Les étiquettes du fournisseur"/>
+                <Label Text="• Les étiquettes du lieu de travail"/>
+
+                <Label Text="Quel que soit le type d'étiquette employé, celle-ci doit être facile à lire et elle doit être bien visible sur le produit."/>
+                <Label Text="Les étiquettes du fournisseur doivent être écrites en anglais et en français."/>
+
+                <Label Text="Toutefois, les étiquettes du lieu de travail peuvent être écrites en anglais, en français ou dans la langue la plus parlée sur le lieu de travail."/>
+                <Label Text="Toutes les étiquettes doivent être faciles à lire, claires, concises et bien en évidence sur le produit."/>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

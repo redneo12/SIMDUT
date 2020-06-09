@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageSafeHandling">
+    <local:TemplatePocketGuide PageTitle="Manipulation sans danger">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="Voici quelques règles simples à garder à l'esprit lors de la manipulation de produits dangereux."/>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #1" FontAttributes="Bold"/>
+                            <Span Text=" Suivez toutes les politiques et procédures que vous avez été formés."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #2" FontAttributes="Bold"/>
+                            <Span Text=" Soyez prudent et planifiez à l'avance. Portez une attention particulière à ce que vous faites pendant que vous travaillez."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #3" FontAttributes="Bold"/>
+                            <Span Text=" Utilisez toujours l'ÉPI requis."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #4" FontAttributes="Bold"/>
+                            <Span Text=" Assurez-vous que tous les contenants sont correctement étiquetés.Signalez immédiatement à votre superviseur tout contenant endommagé ou toute étiquette illisible."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #5" FontAttributes="Bold"/>
+                            <Span Text=" Lisez les étiquettes et les FDS avant d'utiliser des produits dangereux."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #6" FontAttributes="Bold"/>
+                            <Span Text=" Utilisez tous les produits dangereux uniquement pour leur but prévu."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #7" FontAttributes="Bold"/>
+                            <Span Text=" Ne jamais manger ou boire en manipulant des produits dangereux."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #8" FontAttributes="Bold"/>
+                            <Span Text=" Rangez tous les produits dangereux correctement."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #9" FontAttributes="Bold"/>
+                            <Span Text=" Après avoir manipulé des produits dangereux, bien se laver à l'eau et au savon."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Règle #10" FontAttributes="Bold"/>
+                            <Span Text=" En savoir plus sur les procédures d'urgence sur votre lieu de travail."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

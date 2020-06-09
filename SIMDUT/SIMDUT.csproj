@@ -1,0 +1,281 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\Images\Photoshop\**" />
+    <Compile Remove="Views\PocketGuide\CSA\**" />
+    <EmbeddedResource Remove="Assets\Images\Photoshop\**" />
+    <EmbeddedResource Remove="Views\PocketGuide\CSA\**" />
+    <None Remove="Assets\Images\Photoshop\**" />
+    <None Remove="Views\PocketGuide\CSA\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\PocketGuide\_Checklist_BKUP.xaml.cs" />
+    <Compile Remove="Views\PocketGuide\_Checklist_BKUP2.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\PocketGuide\_Checklist_BKUP.xaml" />
+    <EmbeddedResource Remove="Views\PocketGuide\_Checklist_BKUP2.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\1-YOW_Print_Text.png" />
+    <None Remove="Assets\Images\1-YOW_Print_Text_white.png" />
+    <None Remove="Assets\Images\1-YOW_WEB-ICON.png" />
+    <None Remove="Assets\Images\1-YOW_WEB-ICON_Trans.png" />
+    <None Remove="Assets\Images\1-YOW_WEB.png" />
+    <None Remove="Assets\Images\baseline_cancel_black_18dp.png" />
+    <None Remove="Assets\Images\baseline_crop_din_black_18dp.png" />
+    <None Remove="Assets\Images\baseline_search_black_18dp.png" />
+    <None Remove="Assets\Images\feature_graphic.png" />
+    <None Remove="Assets\Images\logo_yow.png" />
+    <None Remove="Assets\Images\logo_yow_small.png" />
+    <None Remove="Assets\Images\logo_yow_small_white.png" />
+    <None Remove="Assets\Images\logo_yow_white.png" />
+    <None Remove="Assets\Images\outline_cancel_white_18dp.png" />
+    <None Remove="Assets\Images\outline_search_white_18dp.png" />
+    <None Remove="Assets\Images\screeen_shot_1.png" />
+    <None Remove="Assets\Images\screeen_shot_2.png" />
+    <None Remove="Assets\Images\screeen_shot_3.png" />
+    <None Remove="Assets\Images\WHMIS\apron.png" />
+    <None Remove="Assets\Images\WHMIS\biohazard.png" />
+    <None Remove="Assets\Images\WHMIS\bodysuit.png" />
+    <None Remove="Assets\Images\WHMIS\boots.png" />
+    <None Remove="Assets\Images\WHMIS\cartridge-respirator.png" />
+    <None Remove="Assets\Images\WHMIS\classA.png" />
+    <None Remove="Assets\Images\WHMIS\classB.png" />
+    <None Remove="Assets\Images\WHMIS\classC.png" />
+    <None Remove="Assets\Images\WHMIS\classD1.png" />
+    <None Remove="Assets\Images\WHMIS\classD2.png" />
+    <None Remove="Assets\Images\WHMIS\classD3.png" />
+    <None Remove="Assets\Images\WHMIS\classE.png" />
+    <None Remove="Assets\Images\WHMIS\classF.png" />
+    <None Remove="Assets\Images\WHMIS\corrosive.png" />
+    <None Remove="Assets\Images\WHMIS\dust-mask.png" />
+    <None Remove="Assets\Images\WHMIS\enviro_toxic.png" />
+    <None Remove="Assets\Images\WHMIS\exclamation.png" />
+    <None Remove="Assets\Images\WHMIS\explosion.png" />
+    <None Remove="Assets\Images\WHMIS\face-shield.png" />
+    <None Remove="Assets\Images\WHMIS\fire.png" />
+    <None Remove="Assets\Images\WHMIS\full-face-mask.png" />
+    <None Remove="Assets\Images\WHMIS\gas.png" />
+    <None Remove="Assets\Images\WHMIS\gloves.png" />
+    <None Remove="Assets\Images\WHMIS\goggles.png" />
+    <None Remove="Assets\Images\WHMIS\health.png" />
+    <None Remove="Assets\Images\WHMIS\imgBarle.jpg" />
+    <None Remove="Assets\Images\WHMIS\imgConsumer.jpg" />
+    <None Remove="Assets\Images\WHMIS\imgExemptions.jpg" />
+    <None Remove="Assets\Images\WHMIS\imgExemptions2.jpg" />
+    <None Remove="Assets\Images\WHMIS\imgLadyLiberty.jpg" />
+    <None Remove="Assets\Images\WHMIS\oxflame.png" />
+    <None Remove="Assets\Images\WHMIS\skull.png" />
+    <None Remove="Assets\Images\WHMIS\speedy_fds.html" />
+    <None Remove="Assets\Images\WHMIS\speedy_sds.html" />
+    <None Remove="Assets\Images\WHMIS\supplied-air-respirator.png" />
+    <None Remove="Assets\Images\WHMIS\Supplier-Label2017.png" />
+    <None Remove="Assets\Images\WHMIS\workplace-lable.png" />
+    <None Remove="Assets\Images\WHMIS\workplace-lable_FRENCH.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\1-YOW_Print_Text.png" />
+    <EmbeddedResource Include="Assets\Images\1-YOW_Print_Text_white.png" />
+    <EmbeddedResource Include="Assets\Images\1-YOW_WEB-ICON.png" />
+    <EmbeddedResource Include="Assets\Images\1-YOW_WEB.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\speedy_fds.html" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\speedy_sds.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\WHMIS\apron.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\biohazard.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\bodysuit.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\boots.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\cartridge-respirator.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classA.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classB.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classC.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classD1.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classD2.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classD3.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classE.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\classF.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\corrosive.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\dust-mask.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\enviro_toxic.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\exclamation.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\explosion.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\face-shield.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\fire.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\full-face-mask.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\gas.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\gloves.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\goggles.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\health.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\imgBarle.jpg" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\imgConsumer.jpg" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\imgExemptions.jpg" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\imgExemptions2.jpg" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\imgLadyLiberty.jpg" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\oxflame.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\skull.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\supplied-air-respirator.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\Supplier-Label2017.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\workplace-lable.png" />
+    <EmbeddedResource Include="Assets\Images\WHMIS\workplace-lable_FRENCH.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.847" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\PocketGuide\_PageIntroduction.xaml.cs">
+      <DependentUpon>_PageIntroduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_Glossary.xaml.cs">
+      <DependentUpon>_Glossary.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_PageTitle.xaml.cs">
+      <DependentUpon>_PageTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_QuickLinksPage.xaml.cs">
+      <DependentUpon>CoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_TableOfContent.xaml.cs">
+      <DependentUpon>_TableOfContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CarouselPageView.xaml.cs">
+      <DependentUpon>CarouselPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_Checklist.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PocketGuide\_NotesPage.xaml.cs">
+      <DependentUpon>_NotesPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="TemplatePocketGuide.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailPageDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageClassAndCategory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageConsumerProducts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageExemptions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageHazardGroups.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageLabels.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageOldWhmis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PagePictograms.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PagePPE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageProducts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageResponsibilities.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageSafeHandling.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageSDS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageSDSExample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageSupplierLabels.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageTradeSecrets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageWhmisAcronym.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageWhmisLaw.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageWhmisMainElements.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageWhmisTraining.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\PageWorplaceLabels.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_PageIntroduction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_PageTitle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_Glossary.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_TableOfContent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_QuickLinksPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_NoteEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PocketGuide\_NotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SearchView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CarouselPageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Views\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\CoursePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageConsumerProducts">
+    <local:TemplatePocketGuide PageTitle="Produits destinés aux consommateurs">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="La plupart des produits achetés dans les magasins de détail ne portent pas d'étiquettes de fournisseur du SIMDUT. En effet, ils sont considérés comme des produits de consommation et sont destinés à un usage domestique. Ces produits sont partiellement exemptés du SIMDUT."/>
+                <Label Text="Si vous achetez un produit de consommation dans un magasin de détail et vous l'utilisez au travail, vous devez toujours respecter les précautions de sécurité figurant sur le produit, télécharger ou localiser la FDS sur le site Web du fabricant et informer votre superviseur. Il est important d'obtenir la FDS car elle contient des informations essentielles sur la protection de votre santé."/>
+                <Label Text="Si vous transférez un produit destiné au consommateur dans un nouveau conteneur sur le lieu de travail, le SIMDUT s'applique pleinement et vous devrez appliquer une étiquette du lieu de travail SIMDUT."/>
+
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Image  Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicConsumer}}" Aspect="AspectFit" />
+                </StackLayout>
+                
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

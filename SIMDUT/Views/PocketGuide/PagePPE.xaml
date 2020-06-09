@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.PagePPE"
+             xmlns:local="clr-namespace:SIMDUT">
+    <local:TemplatePocketGuide PageTitle="Équipement de protection individuelle">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+
+                <Label HorizontalOptions="Start" VerticalOptions="Start" Text="Lorsqu'un travailleur manipule des matières dangereuses, il doit connaître les différents types d'équipement de protection individuelle qu'il doit porter."/>
+                <Label HorizontalOptions="Start" VerticalOptions="Start" Text="Chacun d'entre eux est représenté par un symbole."/>
+                <Label HorizontalOptions="Start" VerticalOptions="Start" Text="On trouve ces symboles à plusieurs endroits différents, entre autres :"/>
+                <StackLayout  HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="15">
+                    <Label HorizontalOptions="Start" VerticalOptions="Start" Text="• sur les étiquettes du contenant"/>
+                    <Label HorizontalOptions="Start" VerticalOptions="Start" Text="• la fiche de données de sécurité (FDS)"/>
+                    <Label HorizontalOptions="Start" VerticalOptions="Start" Text="• l'étiquette du lieu de travail"/>
+                    <Label HorizontalOptions="Start" VerticalOptions="Start" Text="• la signalisation placée sur le lieu de travail"/>
+                </StackLayout>
+
+
+                <Grid HorizontalOptions="CenterAndExpand" Padding="0,20,0,0" RowSpacing="20">
+                    <Grid.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="Image">
+                                <Setter Property="WidthRequest" Value="100"/>
+                                <Setter Property="HeightRequest" Value="100"/>
+                            </Style>
+                            <Style TargetType="Label">
+                                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                            </Style>
+
+                        </ResourceDictionary>
+                    </Grid.Resources>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEApron}}" Grid.Column="0" Grid.Row="0"/>
+                    <Label Text="Tablier" Grid.Column="0" Grid.Row="1"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEBody}}" Grid.Column="1" Grid.Row="0"/>
+                    <Label Text="Combinaison longue" Grid.Column="1" Grid.Row="1"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEBoots}}" Grid.Column="0" Grid.Row="2"/>
+                    <Label Text="Bottes" Grid.Column="0" Grid.Row="3"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPECartidge}}" Grid.Column="1" Grid.Row="2"/>
+                    <Label Text="Respirateur à cartouche" Grid.Column="1" Grid.Row="3"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEFace}}" Grid.Column="0" Grid.Row="4"/>
+                    <Label Text="Masque plein visage" Grid.Column="0" Grid.Row="5"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEGloves}}" Grid.Column="1" Grid.Row="4"/>
+                    <Label Text="Gants" Grid.Column="1" Grid.Row="5"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPESupplied}}" Grid.Column="0" Grid.Row="6"/>
+                    <Label Text="Respirateur à oxygène" Grid.Column="0" Grid.Row="7"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEDust}}" Grid.Column="1" Grid.Row="6"/>
+                    <Label Text="Masque anti-poussières" Grid.Column="1" Grid.Row="7"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEFull}}" Grid.Column="0" Grid.Row="8"/>
+                    <Label Text="Masque avec le respirateur à cartouche" Grid.Column="0" Grid.Row="9"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPPEGoggles}}" Grid.Column="1" Grid.Row="8"/>
+                    <Label Text="Lunettes" Grid.Column="1" Grid.Row="9"/>
+                </Grid>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.NoteEntryPage"
+             xmlns:local="clr-namespace:SIMDUT"
+             Title="Créer votre note" 
+             BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLBlue}}">
+    <ContentPage.Content>
+        <StackLayout Margin="20" Spacing="0" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+            <Grid BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Enregistrer" 
+                    Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                    Text="Supprimer" 
+                    Clicked="OnDeleteButtonClicked"/>
+            </Grid>
+            <Editor Placeholder="Rédigez votre note"
+                Text="{Binding Text}"
+                HeightRequest="100" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

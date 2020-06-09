@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.PageWhmisTraining"
+             xmlns:local="clr-namespace:SIMDUT">
+    <local:TemplatePocketGuide PageTitle="Formation SIMDUT">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="La formation sur le SIMDUT aide les travailleurs à:"/>
+                <StackLayout Padding="15, 15, 15, 15" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Comprendre ce qu'est le SIMDUT et comment cela les affecte"/>
+                    <Label Text="• Identifier les produits dangereux sur leur lieu de travail"/>
+                    <Label Text="• Comprendre l'information contenue sur les étiquettes du SIMDUT"/>
+                    <Label Text="• Comprendre où trouver les fiches de données de sécurité (FDS) et comment localiser les informations importantes"/>
+                    <Label Text="• Comprendre les procédures pour une utilisation, une manipulation, un stockage et une élimination sécuritaires des produits dangereux lors d'une utilisation normale et en cas d'urgence"/>
+                </StackLayout>
+
+                <Label Text="En conséquence, les travailleurs devraient être mieux informés sur la manière de travailler en toute sécurité avec des produits dangereux sur leur lieu de travail. De plus, une formation régulière sur le SIMDUT permet aux entreprises de se conformer à la réglementation."/>
+
+                <Label Text="Rappelez-vous que le SIMDUT est la loi!"/>
+
+                <Label Text="Si un travailleur estime que ses connaissances sur le SIMDUT doivent être améliorées, il devrait en parler à leur superviseur."/>
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

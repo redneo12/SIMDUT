@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.Checklist"
+             xmlns:local="clr-namespace:SIMDUT"
+             xmlns:models="clr-namespace:SIMDUT.Models"
+             xmlns:viewmodels="clr-namespace:SIMDUT.ViewModels">
+    <StackLayout Spacing="0">
+        <ListView x:Name="checklistView" ItemsSource="{Binding Source=models.ChecklistItem}" HasUnevenRows="True" SelectionMode="None" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" ItemTapped="Handle_ItemTapped">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid x:Name="checklistGrid" Margin="10" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox x:Name="checkBox" Grid.Row="0" Grid.Column="0"  CheckedChanged="OnCheckChanged"  IsChecked="{Binding IsChecked}"/>
+
+
+                            <Label Text="{Binding Item}" Grid.Row="0" Grid.Column="1" VerticalOptions="CenterAndExpand"/>
+
+                            <Label x:Name="dateField" Text="{Binding Date, StringFormat='{0:MM dd, yyyy}'}" Grid.Row="1"  Grid.Column="0" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" WidthRequest="50">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label"
+                                            Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
+                                        <Setter Property="IsVisible"  Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label"
+                                            Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="False">
+                                        <Setter Property="IsVisible"  Value="False"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+
+                            <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="250" Grid.Row="1"  Grid.Column="1"  WidthRequest="500" Completed="OnEntryCompleted"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                                <Entry.Triggers>
+                                    <DataTrigger TargetType="Entry"
+                                            Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
+                                        <Setter Property="IsVisible"  Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Entry"
+                                            Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="False">
+                                        <Setter Property="IsVisible"  Value="False"/>
+                                    </DataTrigger>
+                                </Entry.Triggers>
+                            </Entry>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+
+        </ListView>
+    </StackLayout>
+</ContentPage>

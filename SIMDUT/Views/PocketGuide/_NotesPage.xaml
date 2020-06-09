@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.NotesPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnNoteAddedClicked" >
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF415;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        <!--<ToolbarItem Clicked="OnHomeClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF2DC;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>-->
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="0" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLBlue}}">
+            <ListView x:Name="listView" ItemSelected="OnListViewItemSelected" HasUnevenRows="True" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Text}" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}"
+                          Detail="{Binding Date}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

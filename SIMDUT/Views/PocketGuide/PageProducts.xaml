@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.PageProducts"
+             xmlns:local="clr-namespace:SIMDUT">
+    <local:TemplatePocketGuide PageTitle="">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout HorizontalOptions="Center" Style="{StaticResource PGMainLayout}" >
+                <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="15" >
+                    <Label FontAttributes="Bold" 
+                       Text="Another product brought to you by"/>
+
+                    <Label FontAttributes="Bold"
+                       Text="YOW Canada Inc."/>
+                    <Label FontAttributes="Italic"
+                       Text="Safety Compliance Made Easy"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="Fill" HorizontalOptions="Center" Padding="25" >
+                    <Label  FontAttributes="Bold"
+                    Text="An award winning health and safety training provider, YOW Canada offer:"/>
+                    <Label Text="SIMDUT"/>
+                    <Label Text="TDG"/>
+                    <Label Text="Confined Space Awarness"/>
+                    <Label Text="Fall Protection"/>
+                    <Label Text="Office Ergonomics"/>
+                    <Label Text="Workplace Violence and Harrasment"/>
+                    <Label Text="and more..."/>
+                </StackLayout>
+                <StackLayout  HorizontalOptions="Center" Padding="25">
+                    <Label Text="Oline Training"/>
+                    <Label Text="Video Training"/>
+                    <Label Text="Compliance Posters"/>
+                    <Label Text="Pocket Guides and"/>
+                    <Label Text="Government Regulations"/>
+                </StackLayout>
+                <Label  VerticalOptions="EndAndExpand" HorizontalOptions="Center" 
+                   Text="Visit us at www.yowcanada.com"/>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageResponsibilities">
+    <local:TemplatePocketGuide PageTitle="Responsabilités">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout>
+                <Label Text="Responsabilités du fournisseur:" FontAttributes="Bold"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="Les règlements du SIMDUT demandent aux fournisseurs ou aux fabricants de produits contrôlés de:"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Classer les matières dans au moins une des six classes de dangers"/>
+                    <Label Text="• Fournir des étiquettes de fournisseur"/>
+                    <Label Text="• Fournir des Fiches de données de sécurité (FDS)"/>
+                </StackLayout>
+
+                <Label Text="Responsabilités de l'employeur :" FontAttributes="Bold" Margin="0, 15, 0, 0"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="Les règlements du SIMDUT demandent aux employeurs de:"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Établir des procédures sécuritaires pour les employés"/>
+                    <Label Text="• Fournir aux travailleurs une formation régulière sur le SIMDUT"/>
+                    <Label Text="• S'assurer que des fiches de données de sécurité précises sont facilement disponibles"/>
+                    <Label Text="• Fournir des étiquettes sur le lieu de travail, au besoin"/>
+                </StackLayout>
+
+                <Label Text="Responsabilités du travailleur :" FontAttributes="Bold" Margin="0, 15, 0, 0"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="Les règlements du SIMDUT précisent que les employés doivent :"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Suivre une formation régulière sur le SIMDUT et appliquer les connaissances au quotidien sur le lieu de travail"/>
+                    <Label Text="• Signaler à l'employeur ou au fournisseur si les étiquettes ou les fiches de données de sécurité (FDS) ne sont pas à jour, ne sont plus présentes ou si elles sont inexactes"/>
+                    <Label Text="• Utiliser les moyens de protection qui conviennent comme des gants et des lunettes de sécurité, et tels que l'exigent d'autres directives de la Commission de la santé et de la sécurité du travail"/>
+                </StackLayout>
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

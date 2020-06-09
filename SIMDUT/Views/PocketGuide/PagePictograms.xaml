@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PagePictograms">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Image">
+                <Setter Property="HeightRequest" Value="175"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <local:TemplatePocketGuide PageTitle="Pictogrammes">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Padding="0, 20, 0, 0">
+                <Grid RowSpacing="25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicFire}}" Grid.Column="0" Grid.Row="0"/>
+                    <Label Text="FLAMME" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="1" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand">
+
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Pour les risques d'incendie. Les gaz, les aérosols, les liquides et les solides inflammables. Les liquides, les solides et les gaz pyrophoriques. Les matières auto-échauffantes. Les matières qui, au contact de l'eau, dégagent des gaz inflammables. Les matières autoréactives. Les peroxydes organiques." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Une flamme noire dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicOxflame}}" Grid.Column="0" Grid.Row="2"/>
+                    <Label Text="FLAMME SUR UN CERCLE" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="3">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Pour les risques d'oxydation. Les gaz, les liquides et les matières solides comburantes." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Une flamme noire sur un cercle dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicGas}}" Grid.Column="0" Grid.Row="4"/>
+                    <Label Text="BOUTEILLE DE GAZ" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="4"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="5">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Pour les gaz sous pression. Les gaz comprimés, les gaz liquéfiés, les gaz liquéfiés réfrigérés et les gaz dissous." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Un cylindre noir dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicCorrosive}}" Grid.Column="0" Grid.Row="6"/>
+                    <Label Text="CORROSION" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="6"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="7">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Peut être corrosif pour les métaux, ainsi que la peau/les yeux. Les matières corrosives pour les métaux. La Corrosion/irritation cutanée. La lésion oculaire grave/irritation oculaire." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Un image noir d'un liquide versé sur un métal et sur une main, dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExplosive}}" Grid.Column="0" Grid.Row="8"/>
+                    <Label Text="BOMBE EXPLOSANT" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="8"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="9">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Pour les risques d'explosion ou de réactivité. Les matières autoréactives. Les peroxydes organiques." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Une explosion noire dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicSkull}}" Grid.Column="0" Grid.Row="10"/>
+                    <Label Text="TÊTE DE MORT SUR DEUX TIBIAS" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="10"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="11">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Peut causer la mort ou la toxicité avec une exposition de courte durée à des quantités limitées. La toxicité aiguë (ex. orale, cutanée, inhalation)." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Une tête de mort sur deux tibias dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicHealth}}" Grid.Column="0" Grid.Row="12"/>
+                    <Label Text="DANGER POUR LA SANTÉ" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="12"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="13">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Peut causer ou être soupçonné de provoquer des effets graves sur la santé. La sensibilisation respiratoire ou cutanée. La mutagénicité pour les cellules germinales. La cancérogénicité. La toxicité pour la reproduction. La toxicité pour certains organes cibles. Le danger par aspiration." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Un corps noir avec une explosion interne dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExclamation}}" Grid.Column="0" Grid.Row="14"/>
+                    <Label Text="POINT D'EXCLAMATION" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="14"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="15">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Peut entraîner des effets de santé moins graves ou endommager la couche d'ozone. La toxicité aiguë. L'irritation/corrosion cutanée. La lésion oculaire grave/irritation oculaire. La sensibilisation respiratoire ou cutanée. La toxicité pour certains organes cibles." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Un point d'exclamation dans une bordure rouge debout sur une de ses pointes." />
+                    </StackLayout>
+
+
+
+                    <StackLayout  Grid.ColumnSpan="2" Grid.Row="16">
+                        <Label Text="En plus des pictogrammes de bordure en losange rouge, il existe un symbole doté d'une bordure circulaire noire mais qui est toujours reconnu par le SIMDUT 2015." FontAttributes="Italic"/>
+                        <Label Text="À l'heure actuelle, le SGH des Nations Unies ne reconnaît pas les matières biologiques dangereuses selon sa propre classification. Cependant, le Canada a choisi de conserver la classification du SIMDUT 1988 et de la reporter dans le SIMDUT 2015." FontAttributes="Italic"/>
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBio}}" Grid.Column="0" Grid.Row="17"/>
+                    <Label Text="MATIÈRES INFECTUEUSES PRÉSENTANT UN DANGER BIOLOGIQUE" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="17"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="18">
+                        <Label Text="DANGER:" FontAttributes="Bold"/>
+                        <Label Text="Pour les organismes ou des toxines qui peuvent causer des maladies chez les personnes ou les animaux." />
+                        <Label Text="PICTOGRAMME:" FontAttributes="Bold"/>
+                        <Label Text="Il est difficile à décrire, mais simple à retenir." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicEnviroToxic}}" Grid.Column="0" Grid.Row="19"/>
+                    <Label Text="GROUPE DES DANGERS ENVIRONNEMENTAUX" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="19"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="20">
+                        <Label Text="De plus, bien que le SGH ait été inclus dans le SGH, le Canada n'a pas adopté le «groupe des dangers environnementaux» dans le SIMDUT 2015. Ainsi, même si vous pouvez voir ce pictogramme de toxicité aquatique sur un produit sur votre lieu de travail, il ne fait pas partie du SIMDUT au Canada." />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

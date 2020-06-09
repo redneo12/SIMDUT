@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SIMDUT"
+             xmlns:models="clr-namespace:SIMDUT.Models"
+             xmlns:viewmodels="clr-namespace:SIMDUT.ViewModels"
+             x:Class="SIMDUT.PocketGuide.Glossary"
+             x:DataType="viewmodels:GlossaryViewModel"
+             mc:Ignorable="d">
+    <ContentPage.BindingContext>
+        <viewmodels:GlossaryViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Spacing="0">
+        <StackLayout x:Name="glossaryJump" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,10,10,10">
+            
+        </StackLayout>
+        <ListView x:Name="glossaryLV" ItemsSource="{Binding GlossaryGrouped}"  GroupDisplayBinding="{Binding Key}" GroupShortNameBinding="{Binding Key}" HasUnevenRows="True" SelectionMode="None" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" IsGroupingEnabled="true">
+            <!--<ListView.SelectedItem x:DataType="viewmodels:GlossaryViewModel" Command="{Binding SetVisibility}"/>-->
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:GlossaryItem">
+                    <ViewCell >
+                        <StackLayout Padding="20">
+                            <Label x:Name="Element" Text="{Binding Element}" 
+                                           
+                                           LineBreakMode="WordWrap" HorizontalTextAlignment="Start" VerticalOptions ="StartAndExpand" HorizontalOptions="FillAndExpand"    FontAttributes="Bold" TextColor="Black">
+                                <!--<Label.GestureRecognizers>
+                                            <TapGestureRecognizer  x:DataType="viewmodels:GlossaryViewModel" Command="{Binding SetVisibility}"/>
+                                        </Label.GestureRecognizers>-->
+
+                            </Label>
+                            <Label x:Name="Definition" Text="{Binding Definition}" 
+                                           LineBreakMode="WordWrap" VerticalOptions ="FillAndExpand" HorizontalOptions="FillAndExpand"  TextColor="Black">
+                                <Label.IsVisible  x:DataType="viewmodels:GlossaryViewModel" IsVisible="{Binding IsVisible}"/>
+                            </Label>
+
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ActivityIndicator 
+                Grid.RowSpan="2"
+                IsVisible="{Binding IsBusy}"
+                IsRunning="{Binding IsBusy}"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>

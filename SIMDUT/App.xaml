@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.App" NavigationPage.HasNavigationBar="True">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--ICON-->
+            <OnPlatform x:TypeArguments="x:String"
+                x:Key="IconFont">
+                <On Platform="Android"
+            Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+                <On Platform="iOS"
+            Value="materialdesignicons" />
+                <On Platform="UWP"
+            Value="/Assets/materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+            <!--Example: FONTFAMILY MUST BE SET-->
+            <!--<Button Text="&#xf844;"
+               TextColor="Green"
+               BackgroundColor="Transparent"
+               FontFamily="{StaticResource IconFont}"
+               FontSize="Medium" />-->
+
+
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{Binding Source={x:Static local:Strings.ColYowM2Blue}}"></Setter>
+                <Setter Property="BarTextColor" Value="White"></Setter>
+            </Style>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{Binding Source={x:Static local:Strings.ColYowLBlue}}"/>
+
+            </Style>
+            <Style x:Key="PGMainLayout" TargetType="StackLayout">
+                <Setter Property="Padding" Value="5, 25, 5, 25"/>
+
+            </Style>
+            <Style x:Key="MainButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{Binding Source={x:Static local:Strings.ColYowBlue}}"/>
+                <Setter Property="BorderRadius" Value="12"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="BorderColor" Value="White"/>
+                <!--<Setter Property="TextColor" Value="{Binding Source={x:Static local:Strings.ColYowOrange}}"/>-->
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontFamily" Value="DisplayText"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="SubButton" TargetType="Button" BasedOn="{StaticResource MainButton}">
+                <Setter Property="TextColor" Value="white"/>
+            </Style>
+
+            <Style x:Key="Title" TargetType="Label">
+                <Setter Property="TextColor" Value="{Binding Source={x:Static local:Strings.ColYowBlue}}"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="FontSize" Value="50"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="YOWCanadaLink" TargetType="Label" BasedOn="{StaticResource Title}">
+                <Setter Property="TextColor" Value="{Binding Source={x:Static local:Strings.ColYowLink}}"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+            <Style x:Key="Header" TargetType="Label">
+                <Setter Property="TextColor" Value="{Binding Source={x:Static local:Strings.ColYowDarkGrey}}"/>
+                <Setter Property="FontFamily" Value="Verdana"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Padding" Value="0, 7, 0, 0"/>
+            </Style>
+
+            <!--<ControlTemplate x:Key="TempPGPageHeader">
+
+                --><!--<ScrollView>--><!--
+                <StackLayout Style="{StaticResource PGMainLayout}" BackgroundColor="Red">
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
+                        <BoxView Color="Black" WidthRequest ="10000" HeightRequest="2"/>
+                        <Label Text="{TemplateBinding Parent.HeaderText}" FontAttributes="Bold" FontSize="Large"/>
+                        <BoxView Color="Black" WidthRequest ="10000" HeightRequest="2"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="Start" VerticalOptions="StartAndExpand" Margin="2.5">
+                        <ContentPresenter/>
+                    </StackLayout>
+                    --><!--Footer section - no longer used-->
+                    <!--<StackLayout VerticalOptions="End" HorizontalOptions="Center">
+                            <Label Text="{TemplateBinding Parent.FooterText, StringFormat='-{0}-'}"/>
+                        </StackLayout>--><!--
+                </StackLayout>
+                --><!--</ScrollVikew>--><!--
+            </ControlTemplate>-->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+    

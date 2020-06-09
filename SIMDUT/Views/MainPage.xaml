@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SIMDUT.ViewModels"
+             xmlns:v="clr-namespace:SIMDUT.Views"
+             xmlns:local="clr-namespace:SIMDUT.PocketGuide"
+            xmlns:string="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.Views.MainPage"
+            
+            BarTextColor="{Binding Source={x:Static string:Strings.ColYowLBlue}}"
+            SelectedTabColor="{Binding Source={x:Static string:Strings.ColYowM2Blue}}"
+            UnselectedTabColor="{Binding Source={x:Static string:Strings.ColYowLBlue}}"
+            BarBackgroundColor="{Binding Source={x:Static string:Strings.ColYowM2Blue}}">
+    <TabbedPage.ToolbarItems>
+        <!--<ToolbarItem Clicked="OnSearchedClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF349;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>-->
+        <ToolbarItem Clicked="OnInfoClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="&#xF64E;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </TabbedPage.ToolbarItems>
+    <TabbedPage.Children>
+        <local:PageTitle Title="Page Titre"/>
+        <local:TableOfContent Title="Table des Matières"/>
+        <local:QuickLinksPage Title="Liens"/>
+    </TabbedPage.Children>
+</TabbedPage>

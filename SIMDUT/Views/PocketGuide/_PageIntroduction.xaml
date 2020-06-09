@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageIntroduction"
+             >
+    <local:TemplatePocketGuide PageTitle="Introduction">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Le SIMDUT 2015 (SGH) " FontAttributes="Bold" />
+                            <Span Text="est une législation fédérale et provinciale conçue pour tenir les travailleurs et les employeurs informés des dangers liés aux matières dangereuses qu'ils utilisent, ou peuvent possiblement utilisés dans le milieu du travail."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Text="Le SIMDUT remonte à 1988, mais en février 2015, le Canada a adopté certaines parties du Système général harmonisé (SGH) des Nations Unies et ont créé un nouveau système appelé SIMDUT 2015." />
+                <Label Text="Le 1er décembre 2018, les anciennes étiquettes, les fiches de données de sécurité et les symboles de danger du SIMDUT sont devenus obsolètes et ne peuvent plus être utilisés." />
+                <Label Text="Le SIMDUT 2015 présente des avantages par rapport à l'ancien programme puisque ses symboles sont reconnus dans le monde entier, ce qui facilite grandement l'étiquetage et l'expédition internationaux des produits." />
+                <Label Text="Les règlements relatifs au SIMDUT 2015 sont les suivants:" />
+                <Label Text="• Loi sur les produits dangereux (HPA); et" />
+                <Label Text="• Règlement sur les produits dangereux (HPR)." />
+
+                <StackLayout>
+                    <Label FontAttributes="Bold" FontSize="Large" Margin="0, 10, 0, 0"
+                    Text="Guide de poche SIMDUT 2015 (SGH)"/>
+                    <Label 
+                    Text="Ce guide constitue un aperçu de base du SIMDUT 2015. La lecture de ce guide de poche du SIMDUT sans suivre de formation ne correspond pas aux exigences de formation du SIMDUT."/>
+                    <Label FontAttributes="Bold" Margin="0, 15, 0, 15"
+                    Text="Avis de non-responsabilité"/>
+                    <Label
+                    Text="YOW Canada veille à s'assurer de l'exactitude et de la fiabilité de l'information contenue dans ce guide de poche. Cependant, YOW Canada inc. ne fait aucune représentation et n'offre aucune garantie à ce sujet."/>
+                    <Label
+                    Text="YOW Canada inc. ne saurait être tenue responsable de pertes ou de dommages résultant de l'utilisation de l'information contenue dans ce guide de poche ou pour la violation de toute régulation fédérale ou provinciale que l'information dans ce guide de poche pourrait contredire."/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                    <Label VerticalOptions="Center" HorizontalOptions="Center"
+                        Text="Édition 2019"/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"
+                        Text="Rédigé et publié par :"/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"
+                        Text="YOW Canada Inc."/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Center"
+                        Text="1306 Algoma Road."/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Center" 
+                        Text="Ottawa, Ontario K1B 3W8"/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Center"
+                        Text="© 2019 Tous droits réservés - YOW Canada inc."/>
+                    <Label Text="www.yowcanada.com" Style="{StaticResource Title}" FontSize="Small" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}" VerticalOptions="EndAndExpand" HorizontalOptions="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenUrl}" CommandParameter="https://yowcanada.com/?lang=F"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

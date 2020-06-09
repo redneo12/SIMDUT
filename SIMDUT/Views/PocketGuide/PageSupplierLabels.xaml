@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageSupplierLabels">
+    <local:TemplatePocketGuide PageTitle="Étiquettes du fournisseur">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="Les étiquettes du fournisseurs sont le type d'étiquette le plus courant du SIMDUT 2015. Lorsque vous recevez un produit dangereux sur votre lieu de travail, le fournisseur doit fournir une étiquette du fournisseur SIMDUT 2015."/>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Les étiquettes du fournisseur indiquent"/>
+                            <Span Text=" 6 éléments:" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout Margin="15, 15, 0, 15">
+                    <Label Text="1. NOM DU PRODUIT"/>
+                    <Label Text="2. PICTOGRAMMES DE DANGER"/>
+                    <Label Text="3. MENTIONS DE DANGER"/>
+                    <Label Text="4. MENTION D'AVERTISSEMENT"/>
+                    <Label Text="5. CONSEIL DE PRUDENCE"/>
+                    <Label Text="6. INFORMATION DU FOURNISSEUR"/>
+                </StackLayout>
+
+                <Label Text="Les informations de l'étiquette du fournisseur doivent être en anglais et en français."/>
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Si un produit dangereux provenant d'un fournisseur est livrésur votre lieux de travail et que l'étiquette du fournisseur est absente, abîmée ou inexacte,"/>
+                            <Span Text=" n'utilisez pas le produit." FontAttributes="Bold"/>
+                            <Span Text=" Communiquez avec votre superviseur et/ou le fournisseur et assurez-vous que l'étiquette accompagne le produit avant de l'utiliser."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <Label Text="Exemple d'étiquette de fournisseur SIMDUT 2015" Margin="0, 15, 0, 0"/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisSupplierLable}}"/>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

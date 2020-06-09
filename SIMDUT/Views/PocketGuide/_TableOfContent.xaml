@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             xmlns:local1="clr-namespace:SIMDUT.PocketGuide"
+             x:Class="SIMDUT.PocketGuide.TableOfContent">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+
+            <ListView x:Name="MyListView"
+                ItemsSource="{Binding Items}"   
+                CachingStrategy="RecycleElement" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HasUnevenRows="True" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <Label Text="{Binding Title}" TextColor="{Binding Source={x:Static local:Strings.ColYowLink}}" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" Padding="5"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageWhmisMainElements">
+    <local:TemplatePocketGuide PageTitle="Les trois éléments principaux du SIMDUT">
+        <local:TemplatePocketGuide.Body>
+            <Label LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Le SIMDUT comprend trois éléments principaux:" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="1. Les étiquettes:" FontAttributes="Bold"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="identifient le type de danger, avertissent les travailleurs sur les dangers et prendre des mesures de sécurité."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="2. Les fiches de données de sécurité (FDS):" FontAttributes="Bold"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="fournissent des informations détaillées sur les produits dangereux, y compris les dangers, les mesures de protection et les mesures à prendre en cas d'urgence."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="3. L'éducation des travailleurs:" FontAttributes="Bold"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="informe les travailleurs de la façon dont le SIMDUT s'applique au travail, et les informe comment ils peuvent se protéger en toute sécurité lors du travail quotidien avec les produits dangereux."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.QuickLinksPage">
+    <local:TemplatePocketGuide>
+        <local:TemplatePocketGuide.Body>
+            <StackLayout x:Name="CourseMenu" VerticalOptions="CenterAndExpand" Padding="20" Spacing="20">
+                <Grid x:Name="CourseMenuGrid">
+                    <!--<Button Text="Pocket Guide" Style="{StaticResource SubButton}" Clicked="Open_PocketGuid" Grid.Row="0" Grid.ColumnSpan="2"/>-->
+
+                    <Button Text="Glossaire" Style="{StaticResource SubButton}" Clicked="Open_Glossary" Grid.Row="0" Grid.Column="0"/>
+                    <Button Text="Checklist" Style="{StaticResource SubButton}" Clicked="Open_Checklist" Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="Notes" Style="{StaticResource SubButton}" Clicked="Open_Notes"  Grid.Row="2" Grid.Column="0"/>
+
+                    <Label Text="" FontSize="Large" Grid.Row="3" Grid.Column="0"/>
+
+                    <Button Text="Symboles SIMDUT" Style="{StaticResource SubButton}" Clicked="Open_GHS"  Grid.Row="4" Grid.Column="0"/>
+                    <Button Text="Symboles ÉPI" Style="{StaticResource SubButton}" Clicked="Open_PPE"  Grid.Row="5" Grid.Column="0"/>
+                    <Button Text="FDS Exemple" Style="{StaticResource SubButton}" Clicked="Open_SDS"  Grid.Row="6" Grid.Column="0"/>
+                </Grid>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

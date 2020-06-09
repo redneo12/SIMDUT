@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.TemplatePocketGuide">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="0, 15, 0, 0"/>
+
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <!--<ContentView.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0"/>
+    </ContentView.Padding>-->
+    <ContentView.Content>
+
+        <ScrollView VerticalScrollBarVisibility="Always"
+                    HorizontalScrollBarVisibility="Always"
+                    VerticalOptions="FillAndExpand" Padding="10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowM2Blue}}">
+            <Frame  HorizontalOptions="FillAndExpand" OutlineColor="Black" HasShadow="True"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLBlue}}">
+                <StackLayout>
+                    <Label x:Name="HeaderLabel" FontSize="32" FontAttributes="Bold" TextColor="{Binding Source={x:Static local:Strings.ColYowDarkGrey}}" IsVisible="False"/>
+                    <ContentView x:Name="BodyContent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

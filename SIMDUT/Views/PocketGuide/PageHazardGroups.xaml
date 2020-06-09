@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIMDUT"
+             x:Class="SIMDUT.PocketGuide.PageHazardGroups">
+    <local:TemplatePocketGuide PageTitle="Groupes de danger et pictogrammes">
+        <local:TemplatePocketGuide.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="Le SIMDUT 2015 comporte deux groupes de risque:" FontAttributes="Bold"/>
+                <StackLayout Padding="15, 0, 0, 0">
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Risques pour la santé - " FontAttributes="Bold"/>
+                                <Span Text="classés en fonction de la capacité d'un produit dangereux à produire des effets sur la santé tels que des problèmes respiratoires, la cancérogénicité, une irritation de la peau ou des yeux ou tout autre problème de santé potentiel." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Risques physiques - " FontAttributes="Bold"/>
+                                <Span Text="classés selon les propriétés chimiques ou physiques d'un produit dangereux, tels que les gaz sous pression, les substances inflammables et les corrosifs." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <Label Text="Que sont les pictogrammes?" FontAttributes="Bold"/>
+                <StackLayout Padding="15, 0, 0, 0">
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Les pictogrammes " FontAttributes="Bold"/>
+                                <Span Text="sont des images ou des symboles indiquant le type de danger présenté aux utilisateurs de produits dangereux. Les pictogrammes permettent aux travailleurs de voir rapidement si un produit est inflammable ou s'il présente un risque pour la santé." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Text="Les pictogrammes ont un symbole représentant le danger potentiel (incendie, corrosion, danger pour la santé, etc.) entouré d'une bordure en losange rouge. Ensemble, le symbole et la bordure sont appelés pictogrammes. Les pictogrammes sont attribués à des classes ou catégories de danger spécifiques."/>
+                </StackLayout>
+
+
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>

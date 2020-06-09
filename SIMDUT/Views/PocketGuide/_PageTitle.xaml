@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIMDUT.PocketGuide.PageTitle"
+             xmlns:local="clr-namespace:SIMDUT">
+    <ContentPage.Resources>
+        <Style TargetType="Image">
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            <Setter Property="WidthRequest" Value="50"/>
+            <Setter Property="Aspect" Value="AspectFit"/>
+            <Setter Property="IsOpaque" Value="True"/>
+        </Style>
+    </ContentPage.Resources>
+    <local:TemplatePocketGuide>
+        <local:TemplatePocketGuide.Body>
+            <StackLayout x:Name="TitleSideBarLeft" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start"  HorizontalOptions="CenterAndExpand">
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicCorrosive}}"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicEnviroToxic}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExclamation}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExplosive}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicFire}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicGas}}" />
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" VerticalOptions="Start"  HorizontalOptions="CenterAndExpand">
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicHealth}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicOxflame}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicSkull}}" />
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBio}}" />
+                </StackLayout>
+                <StackLayout x:Name="TitleBoxMain" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="5">
+                    <StackLayout>
+                        <Label Text="Guide de poche" Style="{StaticResource Title}" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}"/>
+                        <Label Text="SIMDUT 2015 (SGH)" Style="{StaticResource Title}" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}"/>
+                    </StackLayout>
+                    <Label Text="Un outil de référence rapide." Style="{StaticResource Title}" FontSize="Small" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}"/>
+                </StackLayout>
+                <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="End" Padding="5">
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.LogoYowPath}}" Aspect="AspectFit" WidthRequest="2000"/>
+                    <Label Text="Santé et sécurité en toute simplicité!" Style="{StaticResource Title}" FontSize="Medium" TextColor="Gray"/>
+                    <Label Text="www.yowcanada.com" Style="{StaticResource YOWCanadaLink}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenUrl}" CommandParameter="https://yowcanada.com/?lang=F"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </local:TemplatePocketGuide.Body>
+    </local:TemplatePocketGuide>
+</ContentPage>
