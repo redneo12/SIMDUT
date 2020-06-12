@@ -15,14 +15,15 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Button Text="Enregistrer" 
+                <Button Grid.Column="0" Grid.Row="0"
+                    Text="Enregistrer" 
                     Clicked="OnSaveButtonClicked" />
-                <Button Grid.Column="1"
+                <Button Grid.Column="1" Grid.Row="0"
                     Text="Supprimer" 
                     Clicked="OnDeleteButtonClicked"/>
             </Grid>
             <Editor Placeholder="Rédigez votre note"
-                Text="{Binding Text}"
+                Text="{Binding Text}"  Grid.ColumnSpan="2" Grid.Row="1"
                 HeightRequest="100" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}" />
             
         </StackLayout>

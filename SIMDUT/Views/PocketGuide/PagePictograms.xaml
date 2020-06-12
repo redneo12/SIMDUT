@@ -8,6 +8,9 @@
             <Style TargetType="Image">
                 <Setter Property="HeightRequest" Value="175"/>
             </Style>
+            <Style TargetType="Label">
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <local:TemplatePocketGuide PageTitle="Pictogrammes">
@@ -133,7 +136,7 @@
                     </StackLayout>
 
                     <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicEnviroToxic}}" Grid.Column="0" Grid.Row="19"/>
-                    <Label Text="GROUPE DES DANGERS ENVIRONNEMENTAUX" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="19"/>
+                    <Label Text="GROUPE DES DANGERS ENVIRONNEMENTAUX" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontAttributes="Bold" Grid.Column="1" Grid.Row="19"/>
                     <StackLayout Grid.ColumnSpan="2" Grid.Row="20">
                         <Label Text="De plus, bien que le SGH ait été inclus dans le SGH, le Canada n'a pas adopté le «groupe des dangers environnementaux» dans le SIMDUT 2015. Ainsi, même si vous pouvez voir ce pictogramme de toxicité aquatique sur un produit sur votre lieu de travail, il ne fait pas partie du SIMDUT au Canada." />
                     </StackLayout>

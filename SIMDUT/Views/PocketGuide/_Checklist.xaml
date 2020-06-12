@@ -5,27 +5,38 @@
              xmlns:local="clr-namespace:SIMDUT"
              xmlns:models="clr-namespace:SIMDUT.Models"
              xmlns:viewmodels="clr-namespace:SIMDUT.ViewModels">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem>
+            <ToolbarItem.IconImageSource>
+                <!--This is fake button to save the note; but really it just triggers the unfocues for the entry the user is on-->
+                <FontImageSource Glyph="&#xF193;" FontFamily="{StaticResource IconFont}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <StackLayout Spacing="0">
-        <ListView x:Name="checklistView" ItemsSource="{Binding Source=models.ChecklistItem}" HasUnevenRows="True" SelectionMode="None" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" ItemTapped="Handle_ItemTapped">
+        <ListView x:Name="checklistView" ItemsSource="{Binding Source=models.ChecklistItem}" RowHeight="100" HasUnevenRows="True" SelectionMode="None" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" ItemTapped="Handle_ItemTapped">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid x:Name="checklistGrid" Padding="5, 5, 5, 5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <CheckBox x:Name="checkBox" Grid.Row="0" Grid.Column="0"  CheckedChanged="OnCheckChanged"  IsChecked="{Binding IsChecked}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <CheckBox x:Name="checkBox" CheckedChanged="OnCheckChanged"  IsChecked="{Binding IsChecked}" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
 
 
-                            <Label Text="{Binding Item}" Grid.Row="0" Grid.Column="1" VerticalOptions="CenterAndExpand"/>
-
-                            <StackLayout Grid.Row="1"  Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Label Text="{Binding Item}" VerticalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal" Padding="5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <StackLayout.Triggers>
+                                    <DataTrigger TargetType="StackLayout"
+                                                Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
+                                        <Setter Property="IsVisible"  Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="StackLayout"
+                                                Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="False">
+                                        <Setter Property="IsVisible"  Value="False"/>
+                                    </DataTrigger>
+                                </StackLayout.Triggers>
                                 <Label x:Name="dateField" Text="{Binding Date, StringFormat='{0:MM dd, yyyy}'}"  VerticalOptions="Center">
                                     <Label.Triggers>
                                         <DataTrigger TargetType="Label"
@@ -39,7 +50,7 @@
                                     </Label.Triggers>
                                 </Label>
 
-                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="250"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="250"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
                                     <Entry.Triggers>
                                         <DataTrigger TargetType="Entry"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
@@ -52,7 +63,7 @@
                                     </Entry.Triggers>
                                 </Entry>
                             </StackLayout>
-                        </Grid>
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

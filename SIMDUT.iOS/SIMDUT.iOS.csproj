@@ -73,10 +73,12 @@
     </CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer: Lucas Robert (R2DC548982)</CodesignKey>
+    <CodesignKey>Apple Development: Lucas Robert (R2DC548982)</CodesignKey>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
@@ -204,7 +206,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadMonoInterpreterErrorInfoBarSIMDUTiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarSIMDUTiOSHideInfoBar="True" />
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarSIMDUTiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarSIMDUTiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
