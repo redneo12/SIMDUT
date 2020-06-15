@@ -50,7 +50,7 @@
                                     </Label.Triggers>
                                 </Label>
 
-                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="250"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="35"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted"  BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
                                     <Entry.Triggers>
                                         <DataTrigger TargetType="Entry"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
